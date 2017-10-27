@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Juno",
+  "short_name": "Juno",
+  "version": "com.laesporadelhongo.cordovue",
+  "description": "esto es una red social comunitaria",
+  "author": "Gabriel Cueto - @Mushr00m_Dev",
+  "icons": [],
+  "start_url": "index.html"
+}
