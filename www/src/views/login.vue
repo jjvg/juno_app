@@ -1,10 +1,10 @@
 <template>
-	<div id="ionic">
+	<div id="login">
 		<ion-app>
 			<ion-page class="show-page">
 				<ion-header>
 					<ion-toolbar>
-						<ion-title>Ionic + Vuejs</ion-title>
+						<ion-title> + Vuejs</ion-title>
 					</ion-toolbar>
 				</ion-header>
 				<ion-content>
@@ -20,6 +20,6 @@
 </template>
 <script>
 	export default{
-		name: 'ionic'
+		name: 'login'
 	}
 </script>
