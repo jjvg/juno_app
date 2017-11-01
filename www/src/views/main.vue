@@ -1,8 +1,8 @@
 <template>
   <div class="app">
 	 <nav>
-    <div class="nav-wrapper purple">
-      <a href="#" class="brand-logo center">U</a>
+    <div class="nav-wrapper white">
+      <a href="#" class="brand-logo center purple-text text-darken-2">U</a>
 		</div>
 	</nav>
 	<div class="content">
@@ -15,8 +15,7 @@
 								</div>
             		<div class="card-content white-text">
              					 <p>Tu Red Social Comunitaria, Donde podras expresar las necesidades de tu comunidad
-													y compartir con otros, aqui puedes ingresar, 
-														si aun no te has registrado pues que estas esperando</p>
+													y compartir con otros.</p>
            			</div>
 							</div>
 					</div>
@@ -61,4 +60,45 @@ export default {
   name: 'main'
 }
 </script>
+<style scoped>
+	input:focus{
+		 color: purple;
+		  border-bottom: 1px solid purple;
+		  border-color: purple
+	}
+	 .input-field label {
+	 color: purple;
+	 background-color: purple;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+	 color:purple;
+	 background-color: purple;
+	 border-bottom: 1px solid purple;
+	 border-bottom-color: purple;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+	   color:purple;
+	   background-color: purple;
+	 border-bottom: 1px solid purple;
+	  border-bottom-color: purple;
+     box-shadow: 0 1px 0 0 purple;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+
+     border-bottom: 1px solid purple;
+     box-shadow: 0 1px 0 0 purple;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: purple;
+   }
+</style>
 
