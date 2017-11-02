@@ -20,6 +20,7 @@ export default {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+    
     },
 
     // deviceready Event Handler
@@ -42,3 +43,4 @@ export default {
         console.log('Received Event: ' + id);
     }
 }
+

@@ -46,7 +46,7 @@
 						</form>	
 					</div>
 					<div align="center">
-						¿Aun no te has Registrado?<router-link to="/login">Registrarse</router-link>	
+						¿Aun no te has Registrado?<router-link to="/registro">Registrarse</router-link>	
 					</div>
 	</div>
 			<div id="deviceready" class="blink">
