@@ -6,7 +6,7 @@ import Router from 'vue-router';
 
 import main from '../views/main.vue';
 import about from '../views/about.vue';
-import ionic from '../views/ionic.vue'
+import registro from '../views/registro.vue'
 Vue.use(Router);
 
 export default new Router({
@@ -15,6 +15,6 @@ export default new Router({
   routes: [
     { name: 'home', path: '/', component: main },
 	{ name: 'about', path: '/about', component: about },
-	{ name: 'ionic', path: '/prueba',component: ionic},
+  { name: 'registro', path: '/registro',component: registro},
   ],
 });
