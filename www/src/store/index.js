@@ -4,12 +4,25 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 const state = {
-  msg: 'hello world',
+  user:{
+    nombre: '',
+    apellido:'',
+    password:'',
+    email:'',
+    genero:'',
+  }
 };
 
 const modules = { };
-const mutations = { };
-const getters = { };
+const mutations = {
+    saveUser (state, nombre) {
+      state.user.nombre=nombre}
+ };
+const getters = {
+  nombre(state, getters){
+    return state.user.nombre
+  }
+ };
 const actions = { };
 
 export default new Vuex.Store({

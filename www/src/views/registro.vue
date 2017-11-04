@@ -9,7 +9,7 @@
 		</div>
 	</div>
 	<div class="row">
-   		<form class="col s12" action="#" name="registro" id="registro">
+   		<form class="col s12" action="#">
       		<div class="row">
 				<div class="input-field col s12 m6">
          			 <i class="material-icons prefix">contact_mail</i>
@@ -18,7 +18,7 @@
         		</div>
         		<div class="input-field col s12 m6">
          			 <i class="material-icons prefix">account_circle</i>
-          			<input id="nombre" type="text" class="validate">
+          			<input id="nombre"  type="text" class="validate">
           			<label for="nombre">Nombre</label>
        			</div>
        			<div class="input-field col s12 m6">
@@ -43,7 +43,7 @@
 			<br>
 	  		<div class="row">
 				<div class="col s6">
-					<button class="btn waves-effect waves-light" type="submit" name="action">Registrar</button>
+					<button class="btn waves-effect waves-light" type="submit" v-on:click="registrarse()">Registrar</button>
 				</div>
 					<div class="col s6">
 					<button class="btn waves-effect waves-light" type="submit" name="cancelar">Cancelar</button>
@@ -57,11 +57,21 @@
  </div>		 
 </template>
 <script>
-
+import {mapGetters} from 'vuex';
 export default{
 	name: 'registro',
 	
+	computed:{
+		...mapGetters([
+			'nombre'
+		])
+	},
 	methods:{
+		registrarse(){
+			var valor = document.getElementById("nombre").value;
+				this.$store.commit('saveUser', valor);
+			alert("Registrado"+" "+nombre.value);
+		}
 	}
 	
 };
